@@ -1,0 +1,7 @@
+# Ignore unnecessary files
+__pycache__/
+*.log
+
+
+# If you previously ignored .pkl files but need them now, remove the next line
+# *.pkl 
