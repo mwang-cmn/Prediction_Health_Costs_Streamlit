@@ -9,7 +9,6 @@ import joblib
 # Load and clean data
 url = "https://raw.githubusercontent.com/mwang-cmn/Prediction_Health_Costs_Streamlit/main/Health_Costs/insurance.csv"
 data = pd.read_csv(url)
-data
 data.drop_duplicates(inplace=True)
 
 # Copy data
