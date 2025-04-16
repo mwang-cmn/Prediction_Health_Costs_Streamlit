@@ -1,6 +1,6 @@
-pandas>=2.2.3
-numpy>=2.2.4
-streamlit==1.15.2
-joblib==1.2.0
-scikit-learn==1.0.2
-sklearn==0.0
+pandas
+numpy
+streamlit
+joblib
+scikit-learn
+sklearn
