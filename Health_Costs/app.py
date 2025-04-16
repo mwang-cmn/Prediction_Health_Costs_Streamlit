@@ -3,7 +3,12 @@ import joblib
 import numpy as np
 
 # Load the trained model
-rf = joblib.load('tuned_random_forest_model.pkl')
+try:
+    rf = joblib.load('tuned_random_forest_model.pkl')
+except FileNotFoundError:
+    st.error("Model file not found. Please ensure 'tuned_random_forest_model.pkl' is in the app directory.")
+    st.stop()
+
 
 # Custom Styles
 st.set_page_config(page_title="Health Cost Predictor", page_icon="💰", layout="centered")
