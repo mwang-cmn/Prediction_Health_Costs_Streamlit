@@ -7,8 +7,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 import joblib
 
 # Load and clean data
-url = "https://raw.githubusercontent.com/mwang-cmn/Prediction_Health_Costs_Streamlit/main/Health_Costs/insurance.csv"
-data = pd.read_csv(url)
+data = pd.read_csv('insurance.csv')
 data.drop_duplicates(inplace=True)
 
 # Copy data
